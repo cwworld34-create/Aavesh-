@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090708"><title>For Betu — A Little Treasure</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{--bg:#090708;--red:#a51f2d;--gold:#d8b78a;--muted:#b8a8a4;--white:#f8efec}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 15%,#291014 0,#10090c 38%,#070607 78%);color:var(--white);font-family:'DM Sans',sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.13;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.25'/%3E%3C/svg%3E");z-index:5}.serif{font-family:'Cormorant Garamond',serif}.eyebrow{letter-spacing:.34em;text-transform:uppercase;color:var(--gold);font-size:10px}.btn{border:1px solid #9e4a50;background:linear-gradient(135deg,#68131d,#260b10);color:#fff;padding:14px 24px;border-radius:2px;letter-spacing:.16em;text-transform:uppercase;font-size:10px;cursor:pointer;transition:.3s}.btn:hover{box-shadow:0 0 28px #a51f2d66;transform:translateY(-2px)}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:35px 22px;position:relative}.hero:after{content:"";position:absolute;width:min(76vw,520px);aspect-ratio:1;border:1px solid #a33b4533;border-radius:50%;box-shadow:0 0 90px #6e101b22,inset 0 0 90px #6e101b18;pointer-events:none}.hero-inner{z-index:1;max-width:680px}.hero h1{font:500 clamp(60px,15vw,120px)/.85 'Cormorant Garamond',serif;margin:24px 0 18px;letter-spacing:-.04em}.hero h1 span{color:#c33b49;font-style:italic}.hero p{color:#c9b8b4;font-size:13px;letter-spacing:.08em;line-height:1.9}.rule{width:52px;height:1px;background:var(--red);margin:25px auto}.scrollhint{margin-top:38px;color:#887778;font-size:9px;letter-spacing:.3em;text-transform:uppercase}
+section{padding:90px 20px;max-width:1050px;margin:auto}.sectionhead{text-align:center;margin-bottom:42px}.sectionhead h2{font:500 clamp(38px,8vw,66px)/.95 'Cormorant Garamond',serif;margin:14px 0}.sectionhead p{color:var(--muted);font-size:12px;line-height:1.8}
+.candle-wrap{min-height:92svh;display:grid;place-items:center;text-align:center;padding:60px 20px;background:radial-gradient(ellipse at 50% 62%,#4a12182e,transparent 55%)}.candle-stage{height:310px;width:220px;position:relative;display:grid;place-items:end center;margin:8px auto 20px}.candle{width:64px;height:180px;position:relative;border-radius:5px 5px 8px 8px;background:linear-gradient(90deg,#7c1822,#f0d7c4 25%,#caa58f 70%,#5a111b);box-shadow:inset 4px 0 8px #fff4, inset -7px 0 10px #23080c,0 20px 45px #000;overflow:hidden}.candle:before{content:"";position:absolute;top:0;left:0;right:0;height:13px;background:radial-gradient(ellipse,#2c1010,#9c6a59 65%,#ead2bd);border-radius:50%}.wick{position:absolute;bottom:178px;width:3px;height:23px;background:#211716;border-radius:3px;z-index:2}.flame{position:absolute;bottom:195px;width:27px;height:54px;border-radius:55% 45% 50% 50%;background:radial-gradient(ellipse at 50% 70%,#fff9c9 0 10%,#ffd16b 26%,#f36b20 58%,#a71912 82%,transparent 84%);filter:drop-shadow(0 0 13px #ff8b36) drop-shadow(0 0 30px #e44b20);transform-origin:50% 90%;animation:flicker .12s infinite alternate;transition:opacity .5s,transform .7s}.flame:after{content:"";position:absolute;inset:9px 8px 8px;background:radial-gradient(ellipse,#fffde3 0 25%,#ffd56e 60%,transparent 72%);border-radius:50%}.flame.out{opacity:0;transform:translate(35px,-12px) scale(.1) rotate(45deg);animation:none}.smoke{position:absolute;bottom:240px;width:35px;height:85px;opacity:0;filter:blur(7px);background:linear-gradient(transparent,#a9a0a0aa,transparent);border-radius:50%;transform:translateY(0) scale(.5)}.smoke.show{animation:smoke 3s ease-out forwards}@keyframes flicker{from{transform:rotate(-3deg) scale(.98,1)}to{transform:rotate(3deg) scale(1.04,.97)}}@keyframes smoke{0%{opacity:0;transform:translateY(0) scale(.4)}20%{opacity:.35}100%{opacity:0;transform:translate(-18px,-95px) scale(1.7)}}.candle-base{position:absolute;bottom:-7px;width:150px;height:12px;border-radius:50%;background:linear-gradient(#c99c76,#4b2022);box-shadow:0 12px 30px #000}.candle-note{font:italic 24px 'Cormorant Garamond',serif;color:var(--gold);margin:12px}.hint{font-size:11px;color:#a99594;line-height:1.8;max-width:330px;margin:12px auto 22px}.status{min-height:20px;color:#e3b8a1;font-size:11px;margin:10px}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.photo{margin:0;background:#171012;padding:8px 8px 27px;border:1px solid #4b2529;box-shadow:0 14px 35px #0008;transform:rotate(var(--rot));transition:transform .5s,box-shadow .5s}.photo:nth-child(3n){--rot:1.5deg}.photo:nth-child(3n+1){--rot:-1.3deg}.photo:nth-child(3n+2){--rot:.5deg}.photo:hover{transform:translateY(-7px) rotate(0) scale(1.02);box-shadow:0 20px 45px #000}.photo img{width:100%;height:100%;aspect-ratio:3/4;object-fit:cover;display:block;filter:saturate(.86) contrast(1.03)}.photo figcaption{text-align:center;font:italic 18px 'Cormorant Garamond',serif;color:#d8b9aa;padding-top:8px}.poems{display:grid;grid-template-columns:1fr;gap:16px}.poem{border:1px solid #51242b;background:linear-gradient(135deg,#1b0c10dd,#0d090a);padding:28px 20px;text-align:center;position:relative;overflow:hidden}.poem:before{content:"✦";position:absolute;top:8px;left:13px;color:#8c3b43;font-size:12px}.poem p{white-space:pre-line;font:500 22px/1.35 'Cormorant Garamond',serif;color:#eadbd5;margin:4px 0}.poem small{display:block;color:#a66a6d;letter-spacing:.25em;margin-top:13px;font-size:9px}
+.letter{max-width:650px;margin:auto;text-align:center;padding:44px 24px;border:1px solid #6a3036;background:linear-gradient(145deg,#210d12,#10090c);box-shadow:0 20px 70px #0008}.letter h2{font:500 48px 'Cormorant Garamond',serif;margin:12px 0}.letter p{font:18px/1.8 'Cormorant Garamond',serif;color:#d8c6c0}.signature{color:var(--gold)!important;font-style:italic;font-size:25px!important;margin-top:25px!important}.footer{text-align:center;padding:50px 20px;color:#816d70;font-size:9px;letter-spacing:.3em;text-transform:uppercase}.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s}.reveal.visible{opacity:1;transform:none}
+@media(min-width:700px){.gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.poems{grid-template-columns:repeat(2,1fr)}.poem:last-child{grid-column:1/-1}.candle-stage{transform:scale(1.08)}}
+</style></head>
+<body>
+<header class="hero"><div class="hero-inner"><div class="eyebrow">A little treasure, made with memories</div><h1>For <span>Betu</span></h1><div class="rule"></div><p>Some moments deserve more than a message.<br>This little corner of the world is filled with memories.</p><button class="btn" onclick="document.getElementById('candle').scrollIntoView({behavior:'smooth'})">Open your surprise</button><div class="scrollhint">A memory book · just for you</div></div></header>
+<main>
+<section class="candle-wrap" id="candle"><div class="reveal"><div class="eyebrow">Make a wish</div><div class="sectionhead"><h2 class="serif">One little candle</h2><p>Take a breath, make a wish… and blow gently toward your phone.</p></div><div class="candle-stage"><div class="candle-base"></div><div class="candle"></div><div class="wick"></div><div class="flame" id="flame"></div><div class="smoke" id="smoke"></div></div><div class="candle-note">A wish, just for you.</div><p class="hint" id="micHint">Tap “Start the moment” and allow microphone access. A gentle blow into your phone’s microphone will put out the flame.</p><button class="btn" id="startMic">Start the moment</button> <button class="btn" id="manualBlow">Blow it out</button><div class="status" id="status" aria-live="polite"></div></div></section>
+<section id="memories"><div class="sectionhead reveal"><div class="eyebrow">Little pieces of time</div><h2>Our memories</h2><p>Every picture holds a moment worth keeping.</p></div><div class="gallery">
+<figure class="photo reveal"><img src="assets/page-01.jpg" alt="A memory from the photo collection" loading="lazy"><figcaption>kept close, always</figcaption></figure>
+<figure class="photo reveal"><img src="assets/page-02.jpg" alt="A memory from the photo collection" loading="lazy"><figcaption>kept close, always</figcaption></figure>
+<figure class="photo reveal"><img src="assets/page-03.jpg" alt="A memory from the photo collection" loading="lazy"><figcaption>kept close, always</figcaption></figure>
+<figure class="photo reveal"><img src="assets/page-04.jpg" alt="A memory from the photo collection" loading="lazy"><figcaption>kept close, always</figcaption></figure>
+<figure class="photo reveal"><img src="assets/page-05.jpg" alt="A memory from the photo collection" loading="lazy"><figcaption>kept close, always</figcaption></figure>
+<figure class="photo reveal"><img src="assets/page-06.jpg" alt="A memory from the photo collection" loading="lazy"><figcaption>kept close, always</figcaption></figure>
+<figure class="photo reveal"><img src="assets/page-07.jpg" alt="A memory from the photo collection" loading="lazy"><figcaption>kept close, always</figcaption></figure>
+<figure class="photo reveal"><img src="assets/page-08.jpg" alt="A memory from the photo collection" loading="lazy"><figcaption>kept close, always</figcaption></figure>
+<figure class="photo reveal"><img src="assets/page-09.jpg" alt="A memory from the photo collection" loading="lazy"><figcaption>kept close, always</figcaption></figure>
+<figure class="photo reveal"><img src="assets/page-10.jpg" alt="A memory from the photo collection" loading="lazy"><figcaption>kept close, always</figcaption></figure>
+<figure class="photo reveal"><img src="assets/page-11.jpg" alt="A memory from the photo collection" loading="lazy"><figcaption>kept close, always</figcaption></figure>
+</div></section>
+<section><div class="sectionhead reveal"><div class="eyebrow">A few words from the heart</div><h2>Little lines, big feelings</h2><p>The words you chose, kept just as they are.</p></div><div class="poems">
+<div class="poem reveal"><p>Kabhi Tum Nadaan Kabhi Tum
+Sacchi Lagti Ho,
+Kabhi Tum Masoom To Kabhi Tum
+Bachhi Lagti Ho
+Har Chiz Apni Waqt Par Achhi Lagti Hain,Aur Ek Tum Ho Jo Mujhe Har Wagt Achhi Lagti Ho."汁圈</p><small>01</small></div>
+<div class="poem reveal"><p>Kabhi Subha Yaad Aate Ho,Kabhi Shaam Yaad Aate Ho,Kabhi To Itna Yaad Aate Ho Ki,Aaina Hum Dekhte Hai Or Nazar 3 Aate Ho."A❤</p><small>02</small></div>
+<div class="poem reveal"><p>Gulab jaise ho,
+Gulab lagte ho,
+Halka sa muskura do to
+lajawab lagte ho.</p><small>03</small></div>
+<div class="poem reveal"><p>Nazar ko nazar ki nazar na lage,
+koi accha bhi is kadar na lage....
+Tujhe dekha hai is nazar se
+jis nazar se tujhe nazar na lage...!!</p><small>04</small></div>
+<div class="poem reveal"><p>Dil chahta hai bas tujhe dekhta rahun,
+Teri har baat ko dil me rakhta rahun,
+Tu mile ya na mile ye alag baat hai,
+Par tujhe chahna kabhi na chhodun.</p><small>05</small></div>
+<div class="poem reveal"><p>Tum paas hote ho to sab accha lagta hai,
+Tum hanste ho to kal bhi saccha lagta hai,
+Tumse hi to hai ye duniya haseen,
+Tum bin to har sapna adhura lagta hai.</p><small>06</small></div>
+<div class="poem reveal"><p>Teri khushi me hi meri khushi hai,
+Teri hansi me hi meri subah hai,
+Tu jo ruth jaye to sham ho jaye,
+Tu jo maan jaye to har ghadi sahi hai.</p><small>07</small></div>
+<div class="poem reveal"><p>Na pata tha pyaar kya hota hai,
+Tum mile to ehsaas hua,
+Pehle bas din guzarta tha,
+Ab har din tumhare naam hua.</p><small>08</small></div>
+<div class="poem reveal"><p>Itna to kabhi khud ke liye bhi nahi socha,
+Jitna tere liye sochne lage hain,
+Log kehte hain ishq me neend nahi aati,
+Hum to tere khwabon me sone lage hain.</p><small>09</small></div>
+</div></section>
+<section><div class="letter reveal"><div class="eyebrow">A birthday note</div><h2>Happy Birthday, Betu</h2><p>May this year bring you peaceful days, unexpected happiness, beautiful little adventures, and countless reasons to smile. I hope you always remember how special your presence can make a moment feel.</p><p>Thank you for being part of these memories. Here's to a day that feels as lovely as the moments we keep.</p><p class="signature">With love,<br>Hunny</p></div></section>
+</main><footer class="footer">A little world of memories · Hunny & Betu</footer>
+<script>
+const flame=document.getElementById('flame'),smoke=document.getElementById('smoke'),statusEl=document.getElementById('status'),start=document.getElementById('startMic');let audioCtx,stream,source,analyser,raf,blown=false,above=0;
+function extinguish(){if(blown)return;blown=true;flame.classList.add('out');smoke.classList.add('show');statusEl.textContent='Wish made. Happy Birthday, Betu ✦';if(raf)cancelAnimationFrame(raf);if(stream)stream.getTracks().forEach(t=>t.stop());start.textContent='The wish is made';start.disabled=true;}
+async function listen(){if(blown)return;try{stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}});audioCtx=new (window.AudioContext||window.webkitAudioContext)();source=audioCtx.createMediaStreamSource(stream);analyser=audioCtx.createAnalyser();analyser.fftSize=1024;source.connect(analyser);const data=new Uint8Array(analyser.fftSize);statusEl.textContent='Listening… blow gently toward the microphone.';start.textContent='Microphone is on';function detect(){analyser.getByteTimeDomainData(data);let sum=0;for(let i=0;i<data.length;i++){let v=(data[i]-128)/128;sum+=v*v;}let rms=Math.sqrt(sum/data.length);if(rms>0.105)above++;else above=Math.max(0,above-1);if(above>9){extinguish();return;}raf=requestAnimationFrame(detect);}detect();}catch(e){statusEl.textContent='Microphone unavailable. You can still use “Blow it out”.';document.getElementById('micHint').textContent='Your browser did not grant microphone access. Tap the button below to put out the candle.';}}
+start.addEventListener('click',listen);document.getElementById('manualBlow').addEventListener('click',extinguish);
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script></body></html>
